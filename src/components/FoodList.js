@@ -1,6 +1,5 @@
 import React from "react";
 // import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-// import { useNavigate } from 'react-router-dom';
 import Avocado from "./../imgs/Avocado.png";
 import Banana from "./../imgs/Banana.png";
 import Blueberries from "./../imgs/Blueberries.png";
@@ -17,6 +16,7 @@ import Orange from "./../imgs/Orange.png";
 import Tomato from "./../imgs/Tomato.png";
 import Watermelon from "./../imgs/Watermelon.png";
 import styled from "styled-components";
+// import { Link } from "react-router-dom";
 
 const StyledFoodList = styled.div`
   img {
@@ -81,9 +81,14 @@ function FoodList() {
       <img alt="dragonfruit" src={Dragonfruit}/>
       <img alt="watermelon" src={Watermelon}/>
 
-    {/* <div class='circle-container'>
+    {/* <div className='circle-container'>
       <a href='#' class='center'><img src='image.jpg'/></a>
-      <a href='#' class='deg0'><img alt="cherry" src={Cherry}/></a>
+      
+      <Link to="/food">
+        <img alt="cherry" src={Cherry} className='deg0'/>
+      </Link>
+
+
       <a href='#' class='deg24'><img alt="tomato" src={Tomato}/></a>
       <a href='#' class='deg48'><img alt="carrots" src={Carrots}/></a>
       <a href='#' class='deg72'><img alt="orange" src={Orange}/></a>
