@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-function Header(){
+function Header() {
   return (
     <Router>
       <h1>Is it in season?</h1>
