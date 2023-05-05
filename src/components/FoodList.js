@@ -25,14 +25,15 @@ const StyledFoodList = styled.div`
 
   .circle-container {
     position: relative;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     padding: 20px;
-    border: 1px;
+    // /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    border: solid 1px;
     border-radius: 50%;
     margin: 60px auto;
   }
-  .circle-container {
+  .circle-container a {
     display: block;
     position: absolute;
     top: 50%; 
@@ -42,21 +43,21 @@ const StyledFoodList = styled.div`
     margin: -10px;
   }
   .circle-container img { display: block; width: 100%; }
-  .deg0 { transform: translate(400px); } /* 12em = half the width of the wrapper */
-  .deg24 { transform: rotate(24deg) translate(400px) rotate(-24deg); }
-  .deg48 { transform: rotate(48deg) translate(400px) rotate(-48deg); }
-  .deg72 { transform: rotate(72deg) translate(400px) rotate(-72deg); }
-  .deg96 { transform: rotate(96deg) translate(400px) rotate(-96deg); }
-  .deg120 { transform: rotate(120deg) translate(400px) rotate(-120deg); }
-  .deg144 { transform: rotate(144deg) translate(400px) rotate(-144deg); }
-  .deg168 { transform: rotate(168deg) translate(400px) rotate(-168deg); }
-  .deg192 { transform: rotate(192deg) translate(400px) rotate(-192deg); }
-  .deg216 { transform: rotate(216deg) translate(400px) rotate(-216deg); }
-  .deg240 { transform: rotate(240deg) translate(400px) rotate(-240deg); }
-  .deg264 { transform: rotate(264deg) translate(400px) rotate(-264deg); }
-  .deg288 { transform: rotate(288deg) translate(400px) rotate(-288deg); }
-  .deg312 { transform: rotate(312deg) translate(400px) rotate(-312deg); }
-  .deg336 { transform: rotate(336deg) translate(400px) rotate(-336deg); }
+  .deg0 { transform: translate(200px); }
+  .deg24 { transform: rotate(24deg) translate(200px) rotate(-24deg); }
+  .deg48 { transform: rotate(48deg) translate(200px) rotate(-48deg); }
+  .deg72 { transform: rotate(72deg) translate(200px) rotate(-72deg); }
+  .deg96 { transform: rotate(96deg) translate(200px) rotate(-96deg); }
+  .deg120 { transform: rotate(120deg) translate(200px) rotate(-120deg); }
+  .deg144 { transform: rotate(144deg) translate(200px) rotate(-144deg); }
+  .deg168 { transform: rotate(168deg) translate(200px) rotate(-168deg); }
+  .deg192 { transform: rotate(192deg) translate(200px) rotate(-192deg); }
+  .deg216 { transform: rotate(216deg) translate(200px) rotate(-216deg); }
+  .deg240 { transform: rotate(240deg) translate(200px) rotate(-240deg); }
+  .deg264 { transform: rotate(264deg) translate(200px) rotate(-264deg); }
+  .deg288 { transform: rotate(288deg) translate(200px) rotate(-288deg); }
+  .deg312 { transform: rotate(312deg) translate(200px) rotate(-312deg); }
+  .deg336 { transform: rotate(336deg) translate(200px) rotate(-336deg); }
   
 `
 
@@ -65,7 +66,7 @@ function FoodList() {
     <StyledFoodList>
       <a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a>
       <br /> <br />
-      <img alt="cherry" src={Cherry}/>
+      {/* <img alt="cherry" src={Cherry}/>
       <img alt="tomato" src={Tomato}/>
       <img alt="carrots" src={Carrots}/>
       <img alt="orange" src={Orange}/>
@@ -79,7 +80,32 @@ function FoodList() {
       <img alt="cabbage" src={Cabbage}/>
       <img alt="grapes" src={Grapes}/>
       <img alt="dragonfruit" src={Dragonfruit}/>
-      <img alt="watermelon" src={Watermelon}/>
+      <img alt="watermelon" src={Watermelon}/> */}
+
+    <div className='circle-container'>
+      
+      {/* <Link to="/food">
+        <img alt="cherry" src={Cherry} className='deg0'/>
+      </Link> */}
+
+      {/* <img src='image.jpg'className='center'/> */}
+
+      <img alt="cherry" src={Cherry} className='deg0'/>
+      <img alt="tomato" src={Tomato} className='deg24'/>
+      <img alt="carrots" src={Carrots} className='deg48'/>
+      <img alt="orange" src={Orange} className='deg72'/>
+      <img alt="mango" src={Mango} className='deg96'/>
+      <img alt="banana" src={Banana} className='deg120'/>
+      <img alt="kiwi" src={Kiwi} className='deg144'/>
+      <img alt="avocado" src={Avocado} className='deg168'/>
+      <img alt="broccoli" src={Broccoli} className='deg192'/>
+      <img alt="cauliflower" src={Cauliflower} className='deg216'/>
+      <img alt="blueberries" src={Blueberries} className='deg240'/>
+      <img alt="cabbage" src={Cabbage} className='deg264'/>
+      <img alt="grapes" src={Grapes} className='deg288'/>
+      <img alt="dragonfruit" src={Dragonfruit} className='deg312'/>
+      <img alt="watermelon" src={Watermelon} className='deg336'/>
+    </div>
 
     {/* <div className='circle-container'>
       <a href='#' class='center'><img src='image.jpg'/></a>
