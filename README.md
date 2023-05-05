@@ -1,3 +1,11 @@
+# Is it in Season?
+
+### By: Sarah Andyshak
+
+An application that helps users find out when fruits and vegetables are in season, where to find them, and where to find recipes using these ingredients. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
