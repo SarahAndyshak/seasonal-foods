@@ -89,7 +89,7 @@ function FoodList() {
   const[loadedState, setLoadedState] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/foods/${id}`)
+    fetch(`http://localhost:5000/api/foods`)
     .then(response => {
       if(!response.ok){
         throw new Error(`${response.status}: ${response.statusText}`);
@@ -117,12 +117,20 @@ function FoodList() {
         <a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a>
         <br /> <br />
 
+        <ul>
+          {foodState.map((food, foodId) =>
+          <li key={foodId}>
+              <Link to={`/foods/${food.foodId}`}>
+              <h3>{food.name}</h3>
+              </Link>
+          </li>
+          )}
+        </ul>
 
 
 
 {/* placing images in a circle more angles */}
-      <div class='circle-container'>
-        {/* <a href='#' class='center'><img src='image.jpg'/></a> */}
+      {/* <div class='circle-container'>
         <a href='#' class='deg0'><img alt="deg0" src={Mango}/></a>
         <a href='#' class='deg24'><img alt="deg24" src={Banana}/></a>
         <a href='#' class='deg48'><img alt="deg48" src={Kiwi}/></a>
@@ -138,7 +146,7 @@ function FoodList() {
         <a href='#' class='deg288'><img alt="deg288" src={Tomato}/></a>        
         <a href='#' class='deg312'><img alt="deg312" src={Carrots}/></a>        
         <a href='#' class='deg336'><img alt="deg336" src={Orange}/></a>
-      </div>
+      </div> */}
 
 
     </StyledFoodList>

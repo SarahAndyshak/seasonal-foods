@@ -7,11 +7,13 @@ import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Routes>
+    <>
     <Header />
+    <Routes>
       <Route path="/" element={<FoodList />} />
       <Route path="/foods/:id" element={<FoodDetail />} />
     </Routes>
+    </>
   );
 }
 
