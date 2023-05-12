@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
@@ -8,12 +8,12 @@ const StyledHeader = styled.header`
 
 function Header() {
   return (
-    <Router>
+    <>
       <StyledHeader>
       <h1>Is it in season?</h1>
-      <p><Link to="/">Home</Link></p>
+      <Link to="/">Home</Link>
       </StyledHeader>
-    </Router>
+    </>
   )
 }
 

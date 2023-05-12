@@ -1,5 +1,7 @@
-import React from "react";
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import styled from "styled-components";
+
 import Avocado from "./../imgs/Avocado.png";
 import Banana from "./../imgs/Banana.png";
 import Blueberries from "./../imgs/Blueberries.png";
@@ -15,8 +17,8 @@ import Mango from "./../imgs/Mango.png";
 import Orange from "./../imgs/Orange.png";
 import Tomato from "./../imgs/Tomato.png";
 import Watermelon from "./../imgs/Watermelon.png";
-import styled from "styled-components";
-// import { Link } from "react-router-dom";
+
+
 
 const StyledFoodList = styled.div`
   img {
@@ -58,7 +60,8 @@ const StyledFoodList = styled.div`
   // .deg225 { transform: rotate(225deg) translate(200px) rotate(-225deg); }
   // .deg270 { transform: rotate(270deg) translate(200px) rotate(90deg); }
   // .deg315 { transform: rotate(315deg) translate(200px) rotate(-315deg); }
-// More angles -- all adjusted because of item shape
+
+  // More angles -- all adjusted because of item shape
 .circle-container img { display: block; width: 100%; }
   .deg0 { transform: translate(250px); }
   .deg24 { transform: rotate(19deg) translate(250px) rotate(-19deg); }
@@ -79,6 +82,18 @@ const StyledFoodList = styled.div`
 `
 
 function FoodList() {
+
+  let { id } = useParams();
+  const[foodState, setFoodState] = useState(null);
+  const[errorState, setErrorState] = useState(null);
+  const[loadedState, setLoadedState] = useState(false);
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/api/foods/${id}`)
+  })
+
+
+
   return (
     <StyledFoodList>
       <a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a>
@@ -119,35 +134,20 @@ function FoodList() {
       <div class='circle-container'>
         {/* <a href='#' class='center'><img src='image.jpg'/></a> */}
         <a href='#' class='deg0'><img alt="deg0" src={Mango}/></a>
-
         <a href='#' class='deg24'><img alt="deg24" src={Banana}/></a>
-
         <a href='#' class='deg48'><img alt="deg48" src={Kiwi}/></a>
-
-        <a href='#' class='deg72'><img alt="deg72" src={Avocado}/></a>
-        
-        <a href='#' class='deg96'><img alt="deg96" src={Broccoli}/></a>
-        
-        <a href='#' class='deg120'><img alt="deg120" src={Cauliflower}/></a>
-        
-        <a href='#' class='deg144'><img alt="deg144" src={Blueberries}/></a>
-        
-        <a href='#' class='deg168'><img alt="deg168" src={Cabbage}/></a>
-        
-        <a href='#' class='deg192'><img alt="deg192" src={Grapes}/></a>
-        
-        <a href='#' class='deg216'><img alt="deg216" src={Dragonfruit}/></a>
-        
-        <a href='#' class='deg240'><img alt="deg240" src={Watermelon}/></a>
-        
-        <a href='#' class='deg264'><img alt="deg264" src={Cherry}/></a>
-        
-        <a href='#' class='deg288'><img alt="deg288" src={Tomato}/></a>
-        
-        <a href='#' class='deg312'><img alt="deg312" src={Carrots}/></a>
-        
+        <a href='#' class='deg72'><img alt="deg72" src={Avocado}/></a>        
+        <a href='#' class='deg96'><img alt="deg96" src={Broccoli}/></a>        
+        <a href='#' class='deg120'><img alt="deg120" src={Cauliflower}/></a>        
+        <a href='#' class='deg144'><img alt="deg144" src={Blueberries}/></a>        
+        <a href='#' class='deg168'><img alt="deg168" src={Cabbage}/></a>        
+        <a href='#' class='deg192'><img alt="deg192" src={Grapes}/></a>        
+        <a href='#' class='deg216'><img alt="deg216" src={Dragonfruit}/></a>        
+        <a href='#' class='deg240'><img alt="deg240" src={Watermelon}/></a>        
+        <a href='#' class='deg264'><img alt="deg264" src={Cherry}/></a>        
+        <a href='#' class='deg288'><img alt="deg288" src={Tomato}/></a>        
+        <a href='#' class='deg312'><img alt="deg312" src={Carrots}/></a>        
         <a href='#' class='deg336'><img alt="deg336" src={Orange}/></a>
-
       </div>
 
 
