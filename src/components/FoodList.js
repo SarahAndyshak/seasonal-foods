@@ -117,40 +117,70 @@ function FoodList() {
         <a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a>
         <br /> <br />
 
-        <ul>
-          {foodState.map((food, foodId) =>
-          <li key={foodId}>
-              <Link to={`/foods/${food.foodId}`}>
-              <h3>{food.name}</h3>
-              </Link>
-          </li>
-          )}
-        </ul>
+        {/* Placing images in a circle */}
+        <div class='circle-container'>
+          <Link to="/foods/5">
+          <img alt="deg0" src={Mango} className="deg0"/>
+          </Link>
 
+          <Link to="/foods/6">
+          <img alt="deg24" src={Banana} className="deg24"/>
+          </Link>
 
+          <Link to="/foods/7">
+          <img alt="deg48" src={Kiwi} className="deg48"/>
+          </Link>
 
-{/* placing images in a circle more angles */}
-      {/* <div class='circle-container'>
-        <a href='#' class='deg0'><img alt="deg0" src={Mango}/></a>
-        <a href='#' class='deg24'><img alt="deg24" src={Banana}/></a>
-        <a href='#' class='deg48'><img alt="deg48" src={Kiwi}/></a>
-        <a href='#' class='deg72'><img alt="deg72" src={Avocado}/></a>        
-        <a href='#' class='deg96'><img alt="deg96" src={Broccoli}/></a>        
-        <a href='#' class='deg120'><img alt="deg120" src={Cauliflower}/></a>        
-        <a href='#' class='deg144'><img alt="deg144" src={Blueberries}/></a>        
-        <a href='#' class='deg168'><img alt="deg168" src={Cabbage}/></a>        
-        <a href='#' class='deg192'><img alt="deg192" src={Grapes}/></a>        
-        <a href='#' class='deg216'><img alt="deg216" src={Dragonfruit}/></a>        
-        <a href='#' class='deg240'><img alt="deg240" src={Watermelon}/></a>        
-        <a href='#' class='deg264'><img alt="deg264" src={Cherry}/></a>        
-        <a href='#' class='deg288'><img alt="deg288" src={Tomato}/></a>        
-        <a href='#' class='deg312'><img alt="deg312" src={Carrots}/></a>        
-        <a href='#' class='deg336'><img alt="deg336" src={Orange}/></a>
-      </div> */}
+          <Link to="/foods/8">
+          <img alt="deg72" src={Avocado} className="deg72"/>
+          </Link>
 
+          <Link to="/foods/9">
+          <img alt="deg96" src={Broccoli} className="deg96"/>
+          </Link>
+
+          <Link to="/foods/10">
+          <img alt="deg120" src={Cauliflower} className="deg120"/>
+          </Link>
+          
+          <Link to="/foods/11">
+          <img alt="deg144" src={Blueberries} className="deg144"/>
+          </Link>    
+
+          <Link to="/foods/12">
+          <img alt="deg168" src={Cabbage} className="deg168"/>
+          </Link>
+
+          <Link to="/foods/13">
+          <img alt="deg192" src={Grapes} className="deg192"/>
+          </Link>
+
+          <Link to="/foods/14">
+          <img alt="deg216" src={Dragonfruit} className="deg216"/>
+          </Link>
+
+          <Link to="/foods/15">
+          <img alt="deg240" src={Watermelon} className="deg240"/>
+          </Link>
+
+          <Link to="/foods/1">
+          <img alt="deg264" src={Cherry} className="deg264"/>
+          </Link>
+
+          <Link to="/foods/2">
+          <img alt="deg288" src={Tomato} className="deg288"/>
+          </Link>
+
+          <Link to="/foods/3">
+          <img alt="deg312" src={Carrots} className="deg312"/>
+          </Link>
+
+          <Link to="/foods/4">
+          <img alt="deg336" src={Orange} className="deg336"/>
+          </Link>
+        </div>
 
     </StyledFoodList>
-
 
     );
   }
