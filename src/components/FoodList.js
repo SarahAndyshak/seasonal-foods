@@ -90,44 +90,34 @@ function FoodList() {
 
   useEffect(() => {
     fetch(`http://localhost:5000/api/foods/${id}`)
-  })
+    .then(response => {
+      if(!response.ok){
+        throw new Error(`${response.status}: ${response.statusText}`);
+      } else {
+        return response.json()
+      }
+    })
+    .then((jsonifiedResponse) => {
+      setFoodState(jsonifiedResponse);
+      setLoadedState(true);
+    })
+    .catch((error) => {
+      setErrorState(error.message);
+    });
+  }, [])
+
+  if(errorState) {
+    return <h1>Error: {errorState}</h1>;
+  } else if (!loadedState) {
+    return <h1>...Loading...</h1>;
+  } else {
+    return (
+
+      <StyledFoodList>
+        <a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a>
+        <br /> <br />
 
 
-
-  return (
-    <StyledFoodList>
-      <a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a>
-      <br /> <br />
-
-{/* Just placing on the page */}
-      {/* <img alt="cherry" src={Cherry}/>
-      <img alt="tomato" src={Tomato}/>
-      <img alt="carrots" src={Carrots}/>
-      <img alt="orange" src={Orange}/>
-      <img alt="mango" src={Mango}/>
-      <img alt="banana" src={Banana}/>
-      <img alt="kiwi" src={Kiwi}/>
-      <img alt="avocado" src={Avocado}/>
-      <img alt="broccoli" src={Broccoli}/>
-      <img alt="cauliflower" src={Cauliflower}/>
-      <img alt="blueberries" src={Blueberries}/>
-      <img alt="cabbage" src={Cabbage}/>
-      <img alt="grapes" src={Grapes}/>
-      <img alt="dragonfruit" src={Dragonfruit}/>
-      <img alt="watermelon" src={Watermelon}/> */}
-
-{/* Placing images in a circle, original code */}
-    {/* <div class='circle-container'>
-        <a href='#' class='center'><img src='image.jpg'/></a>
-        <a href='#' class='deg0'><img alt="deg0" src='image.jpg'/></a>
-        <a href='#' class='deg45'><img alt="deg45" src='image.jpg'/></a>
-        <a href='#' class='deg90'><img alt="deg90" src='image.jpg'/></a>
-        <a href='#' class='deg135'><img alt="deg135" src='image.jpg'/></a>
-        <a href='#' class='deg180'><img alt="deg180" src='image.jpg'/></a>
-        <a href='#' class='deg225'><img alt="deg225" src='image.jpg'/></a>
-        <a href='#' class='deg270'><img alt="deg270" src='image.jpg'/></a>
-        <a href='#' class='deg315'><img alt="deg315" src='image.jpg'/></a>
-    </div> */}
 
 
 {/* placing images in a circle more angles */}
@@ -152,7 +142,10 @@ function FoodList() {
 
 
     </StyledFoodList>
-  );
+
+
+    );
+  }
 }
 
 export default FoodList;
