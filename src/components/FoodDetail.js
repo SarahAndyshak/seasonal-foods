@@ -2,6 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
 
+const StyledFoodDetails = styled.div`
+  margin: 2rem;
+  margin-left: 5rem;
+  font-family: 'Elsie', cursive;
+  font-size: 1.5rem;
+`
+
+
 function FoodDetail() {
 
   let { id } = useParams();
@@ -34,17 +42,17 @@ function FoodDetail() {
   } else {
     return (
 
-      <React.Fragment>
+      <StyledFoodDetails>
         <h1>{foodState.name}</h1>
         <h3>When is it in season?</h3>
-        <p>{foodState.harvestSeason}</p>
+        <h5>{foodState.harvestSeason}</h5>
         <h3>Where does it generally grow?</h3>
-        <p>{foodState.geography}</p>
+        <h5>{foodState.geography}</h5>
         <h3>Popular uses:</h3>
-        <p>{foodState.popularUses}</p>
+        <h5>{foodState.popularUses}</h5>
         <h3>Sample recipe:</h3>
-        <p>{foodState.sampleRecipe}</p>
-      </React.Fragment>
+        <h5>{foodState.sampleRecipe}</h5>
+      </StyledFoodDetails>
     );
   }
 

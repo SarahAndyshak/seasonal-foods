@@ -21,6 +21,25 @@ import Watermelon from "./../imgs/Watermelon.png";
 
 
 const StyledFoodList = styled.div`
+  margin: 2rem;
+  font-family: 'Elsie', cursive;
+  // font-family: 'Fredericka the Great', cursive;
+
+
+  & > h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  & a {
+    color:rgb(73, 97, 51)
+  }
+  & a:link {
+    text-decoration: none;
+  }
+  & a:hover {
+    color:rgb(124, 55, 147)
+  }
+
   img {
     height: 100px;
   }
@@ -114,7 +133,7 @@ function FoodList() {
     return (
 
       <StyledFoodList>
-        <a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a>
+        <h2><a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a></h2>
         <br /> <br />
 
         {/* Placing images in a circle */}
