@@ -45,7 +45,6 @@ function Header() {
       <h2><Link to="/recipes">Recipes</Link></h2>
       {/* <h2><a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a></h2> */}
 
-
       </StyledHeader>
     </>
   )
