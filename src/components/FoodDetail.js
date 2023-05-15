@@ -7,6 +7,18 @@ const StyledFoodDetails = styled.div`
   margin-left: 5rem;
   font-family: 'Elsie', cursive;
   font-size: 1.5rem;
+  & h1 {
+    color:rgb(124, 55, 147)
+  }
+  & a {
+    color:rgb(124, 55, 147)  
+  }
+  & a:link {
+    text-decoration: none;
+  }
+  & a:hover {
+    color:rgb(73, 97, 51)
+  }
 `
 
 
@@ -50,8 +62,10 @@ function FoodDetail() {
         <h5>{foodState.geography}</h5>
         <h3>Popular uses:</h3>
         <h5>{foodState.popularUses}</h5>
-        <h3>Sample recipe:</h3>
-        <h5>{foodState.sampleRecipe}</h5>
+        {/* <h3>Sample recipe:</h3>
+        <h5>{foodState.sampleRecipe}</h5> */}
+        <br />
+        <Link to="/recipes"><h5>Check out some recipes with this ingredient!</h5></Link>
       </StyledFoodDetails>
     );
   }

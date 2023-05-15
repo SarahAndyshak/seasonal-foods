@@ -22,8 +22,8 @@ import Watermelon from "./../imgs/Watermelon.png";
 
 const StyledFoodList = styled.div`
   margin: 2rem;
+  margin-top: 4rem;
   font-family: 'Elsie', cursive;
-  // font-family: 'Fredericka the Great', cursive;
 
 
   & > h2 {
@@ -133,8 +133,8 @@ function FoodList() {
     return (
 
       <StyledFoodList>
-        <h2><a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a></h2>
-        <br /> <br />
+        {/* <h2><a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a></h2>
+        <br /> <br /> */}
 
         {/* Placing images in a circle */}
         <div class='circle-container'>

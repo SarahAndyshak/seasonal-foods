@@ -15,12 +15,13 @@ const StyledHeader = styled.header`
   align-items: center;
   padding: 0 2rem;
 
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Elsie', cursive;
+
   & > h1 {
     font-size: 3rem;
     margin-right: 50px;
   }
-  & > p {
+  & > h2 {
     font-size: 2rem;
     margin: 15px;
   }
@@ -40,8 +41,9 @@ function Header() {
     <>
       <StyledHeader>
       <h1>Is it in season?</h1>
-      <p><Link to="/">Home</Link></p>
-      <p><Link to="/recipes">Recipes</Link></p>
+      <h2><Link to="/">Home</Link></h2>
+      <h2><Link to="/recipes">Recipes</Link></h2>
+      <h2><a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a></h2>
 
 
       </StyledHeader>
