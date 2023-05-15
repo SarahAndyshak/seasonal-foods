@@ -18,17 +18,18 @@ import Orange from "./../imgs/Orange.png";
 import Tomato from "./../imgs/Tomato.png";
 import Watermelon from "./../imgs/Watermelon.png";
 
-
-
 const StyledFoodList = styled.div`
   margin: 2rem;
-  margin-top: 4rem;
+  // margin-top: 4rem;
   font-family: 'Elsie', cursive;
-
 
   & > h2 {
     text-align: center;
     font-size: 2rem;
+  }
+  & h3 {
+    font-size: 1.5rem;
+    text-align: center;
   }
   & a {
     color:rgb(73, 97, 51)
@@ -44,13 +45,6 @@ const StyledFoodList = styled.div`
     height: 100px;
   }
 
-  // .place_list {
-  //   position: absolute;
-  //   z-index: 1;
-  //   padding: 20px;
-  //   box-shadow: 0px 8px 10px 0px #0000002b;
-  // }
-
   .circle-container {
     position: relative;
     width: 500px;
@@ -65,39 +59,55 @@ const StyledFoodList = styled.div`
     position: absolute;
     top: 40%; 
     left: 40%;
-    // width: 70px; 
-    // height: 70px;
-    // margin: -10px;
   }
-// Original code  
-  // .circle-container img { display: block; width: 100%; }
-  // .deg0 { transform: translate(200px); } /* 12em = half the width of the wrapper */
-  // .deg45 { transform: rotate(45deg) translate(200px) rotate(-45deg); }
-  // .deg90 { transform: rotate(90deg) translate(200px) rotate(-90deg); }
-  // .deg135 { transform: rotate(135deg) translate(200px) rotate(-135deg); }
-  // .deg180 { transform: translate(-200px); }
-  // .deg225 { transform: rotate(225deg) translate(200px) rotate(-225deg); }
-  // .deg270 { transform: rotate(270deg) translate(200px) rotate(90deg); }
-  // .deg315 { transform: rotate(315deg) translate(200px) rotate(-315deg); }
 
   // More angles -- all adjusted because of item shape
 .circle-container img { display: block; width: 100%; }
   .deg0 { transform: translate(250px); }
+  .deg0:hover { transform: translate(250px) scale(1.5);}
+
   .deg24 { transform: rotate(19deg) translate(250px) rotate(-19deg); }
+  .deg24:hover { transform: rotate(19deg) translate(250px) rotate(-19deg) scale(1.5); }
+
   .deg48 { transform: rotate(44deg) translate(250px) rotate(-44deg); }
+  .deg48:hover { transform: rotate(44deg) translate(250px) rotate(-44deg) scale(1.5); }
+
   .deg72 { transform: rotate(66deg) translate(250px) rotate(-66deg); }
+  .deg72:hover { transform: rotate(66deg) translate(250px) rotate(-66deg) scale(1.5); }
+
   .deg96 { transform: rotate(94deg) translate(250px) rotate(-94deg); }
+  .deg96:hover { transform: rotate(94deg) translate(250px) rotate(-94deg) scale(1.5); }
+
   .deg120 { transform: rotate(126deg) translate(250px) rotate(-126deg); }
+  .deg120:hover { transform: rotate(126deg) translate(250px) rotate(-126deg) scale(1.5); }
+
   .deg144 { transform: rotate(150deg) translate(250px) rotate(-150deg); }
+  .deg144:hover { transform: rotate(150deg) translate(250px) rotate(-150deg) scale(1.5); }
+
   .deg168 { transform: rotate(174deg) translate(250px) rotate(-174deg); }
+  .deg168:hover { transform: rotate(174deg) translate(250px) rotate(-174deg) scale(1.5); }
+
   .deg192 { transform: rotate(196deg) translate(250px) rotate(-196deg); }
+  .deg192:hover { transform: rotate(196deg) translate(250px) rotate(-196deg) scale(1.5); }
+
   .deg216 { transform: rotate(220deg) translate(250px) rotate(-220deg); }
+  .deg216:hover { transform: rotate(220deg) translate(250px) rotate(-220deg) scale(1.5); }
+
   .deg240 { transform: rotate(248deg) translate(250px) rotate(-248deg); }
+  .deg240:hover { transform: rotate(248deg) translate(250px) rotate(-248deg) scale(1.5); }
+
   .deg264 { transform: rotate(274deg) translate(250px) rotate(-274deg); }
+  .deg264:hover { transform: rotate(274deg) translate(250px) rotate(-274deg) scale(1.5); }
+
   .deg288 { transform: rotate(296deg) translate(250px) rotate(-296deg); }
+  .deg288:hover { transform: rotate(296deg) translate(250px) rotate(-296deg) scale(1.5); }
+
   .deg312 { transform: rotate(316deg) translate(250px) rotate(-316deg); }
+  .deg312:hover { transform: rotate(316deg) translate(250px) rotate(-316deg) scale(1.5); }
+
   .deg336 { transform: rotate(336deg) translate(250px) rotate(-336deg); }
-  
+  .deg336:hover { transform: rotate(336deg) translate(250px) rotate(-336deg) scale(1.5); }
+
 `
 
 function FoodList() {
@@ -136,8 +146,10 @@ function FoodList() {
         {/* <h2><a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a></h2>
         <br /> <br /> */}
 
+        <h3>Select a fruit or vegetable to learn more!</h3>
+
         {/* Placing images in a circle */}
-        <div class='circle-container'>
+        <div className='circle-container'>
           <Link to="/foods/5">
           <img alt="deg0" src={Mango} className="deg0"/>
           </Link>

@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledRecipes = styled.div`
 margin: 2rem;
 margin-left: 5rem;
+text-align: left;
 font-family: 'Elsie', cursive;
 font-size: 1.5rem;
 
@@ -31,12 +33,12 @@ function Recipes () {
 
       <h1>Tomato</h1>
       <h3><a href="https://cookeatshare.com/recipes/mediterranean-lamb-stew-with-tomato-mushroom-and-eggplant-kokkinisto-797643">Mediterranean Lamb Stew with tomato, mushroom and eggplant (Kokkinisto), by John Spottiswood</a></h3>
-      <h3><a href="https://cookeatshare.com/recipes?keywords=tomato">Check out more recipes with cherries!</a></h3>
+      <h3><a href="https://cookeatshare.com/recipes?keywords=tomato">Check out more recipes with tomato!</a></h3>
       <br />
 
       <h1>Carrot</h1>
       <h3><a href="https://cookeatshare.com/recipes/carrot-and-red-lentils-soup-761174">Carrot and Red Lentil Soup, by Easy Cook - Laka kuharica</a></h3>
-      <h3><a href="https://cookeatshare.com/recipes?keywords=carrot">Check out more recipes with cherries!</a></h3>
+      <h3><a href="https://cookeatshare.com/recipes?keywords=carrot">Check out more recipes with carrot!</a></h3>
       <br />
 
       <h1>Orange</h1>

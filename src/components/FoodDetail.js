@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledFoodDetails = styled.div`
+  text-align: left;
   margin: 2rem;
   margin-left: 5rem;
   font-family: 'Elsie', cursive;
@@ -18,6 +19,9 @@ const StyledFoodDetails = styled.div`
   }
   & a:hover {
     color:rgb(73, 97, 51)
+  }
+  & h4 {
+    text-align: center;
   }
 `
 
@@ -65,7 +69,8 @@ function FoodDetail() {
         {/* <h3>Sample recipe:</h3>
         <h5>{foodState.sampleRecipe}</h5> */}
         <br />
-        <Link to="/recipes"><h5>Check out some recipes with this ingredient!</h5></Link>
+        <h4><Link to="/recipes">Check out some recipes with this ingredient!</Link> |
+        <a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y="> Find a Farmers Market Near You!</a></h4>
       </StyledFoodDetails>
     );
   }
