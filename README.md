@@ -6,8 +6,10 @@ A React application that helps users find out when fruits and vegetables are in 
 
 #### 🍊 [Technologies Used](#technologies-used)
 #### 🥦 [How to use this App](#how-to-use-this-app)
-#### 🍇 [Available Scripts](#available-scripts)
-#### 🍎 [Known Bugs](#known-bugs)
+#### 🍇 [App plan](#app-plan)
+#### 🍎 [Screenshots](#screenshots)
+#### 🍌 [Available Scripts](#available-scripts)
+#### 🫐 [Known Bugs](#known-bugs)
 #### 🥑 [License](#license)
 
 ## Technologies Used
@@ -24,6 +26,15 @@ A React application that helps users find out when fruits and vegetables are in 
 2. Clone the [SeasonalFood API](https://github.com/SarahAndyshak/SeasonalFood.Solution) to your local machine and follow directions for installation in its README.
 3. Run `dotnet run` or `dotnet watch run` in your CLI or terminal.
 4. If the browser does not automatically open, navigate to _http://localhost:3000_ in your browser.
+
+## App plan
+![App plan](App-plan.png)
+
+## Screenshots
+![Splash page](splash-page.png)
+![Fruit highlighted](splash-highlighted.png)
+![Details page](details.png)
+![Recipe links](recipes-page.png)
 
 ## Getting Started with Create React App
 
