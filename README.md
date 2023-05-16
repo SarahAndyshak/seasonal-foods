@@ -11,6 +11,7 @@ A React application that helps users find out when fruits and vegetables are in 
 #### 🍌 [Available Scripts](#available-scripts)
 #### 🫐 [Known Bugs](#known-bugs)
 #### 🥑 [License](#license)
+#### 🥕 [Image Credits](#image-credits)
 
 ## Technologies Used
 * React.js
@@ -31,9 +32,13 @@ A React application that helps users find out when fruits and vegetables are in 
 ![App plan](App-plan.png)
 
 ## Screenshots
+Splash/home page
 ![Splash page](splash-page.png)
+Hovering over an item for the link
 ![Fruit highlighted](splash-highlighted.png)
+Details about each item
 ![Details page](details.png)
+The recipes page
 ![Recipe links](recipes-page.png)
 
 ## Getting Started with Create React App
@@ -79,3 +84,21 @@ As of 15 May 2023, none.
 [MIT](https://opensource.org/license/mit/)
 
 Copyright (c) 2023
+
+## Image Credits
+All images were modified from photos posted to unsplash.com. You can find them here:
+* [Cherry, Quaritsch Photography](https://unsplash.com/photos/INprSEBbfG4)
+* [Tomato, Avin CP](https://unsplash.com/photos/OlXUUQedQyM)
+* [Carrots, Armando Arauz](https://unsplash.com/photos/R198mTymEFQ)
+* [Orange, Jaehoon Park](https://unsplash.com/photos/la3oGCK0YtI)
+* [Mango, Mockup Graphics](https://unsplash.com/photos/2BeAHd_Kmf8)
+* [Banana, Mockup Graphics](https://unsplash.com/photos/Kl3467edwsE)
+* [Kiwi, engin akyurt](https://unsplash.com/photos/jPVcZsxRGJo)
+* [Avocado, Gil Ndjouwou](https://unsplash.com/photos/cueV_oTVsic)
+* [Broccoli, Mockup Graphics](https://unsplash.com/photos/l55IGtwI8mI)
+* [Cauliflower, Jennifer Schmidt | jsfoodphotography](https://unsplash.com/photos/0XVrBLy73rw)
+* [Blueberries, Eiliv Aceron](https://unsplash.com/photos/-D6xO2LUVdk)
+* [Cabbage, Tomas Tuma](https://unsplash.com/photos/FJ_F5ROq8b4)
+* [Grapes, Andrey Haimin](https://unsplash.com/photos/qtwlKiu6VHg)
+* [Dragon fruit, Helen Thomas](https://unsplash.com/photos/vkVLkKi8H60)
+* [Watermelon, Art Rachen](https://unsplash.com/photos/izi5AnlbRIA)
