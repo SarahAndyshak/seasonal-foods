@@ -69,6 +69,7 @@ function FoodDetail() {
         {/* <h3>Sample recipe:</h3>
         <h5>{foodState.sampleRecipe}</h5> */}
         <br />
+        
         <h4><Link to="/recipes">Check out some recipes with this ingredient!</Link> |
         <a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y="> Find a Farmers Market Near You!</a></h4>
       </StyledFoodDetails>
