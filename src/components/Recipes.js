@@ -24,6 +24,7 @@ margin-left: 5rem;
 text-align: left;
 font-family: 'Elsie', cursive;
 font-size: 1.5rem;
+
 img {
   height: 100px;
 }
@@ -67,7 +68,10 @@ img {
 function Recipes () {
   return (
     <StyledRecipes>
-      <div className="title"><h1>Enjoy some recipes at these links!</h1></div>
+      <div className="title">
+        <h1>Enjoy some recipes at these links!</h1>
+        <h5>Click on the name of an item or its picture to return to its details</h5>
+        </div>
       <div className="container">
         <img src={Cherry} alt="Cherry"/>
         <h1><Link to="/foods/1">Cherry</Link></h1>

@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import { Navbar } from "react-bootstrap";
-
 
 const StyledHeader = styled.header`
   background-color: rgb(185, 223, 152);
@@ -40,11 +36,11 @@ function Header() {
   return (
     <>
       <StyledHeader>
-      <h1>Is it in season?</h1>
-      <h2><Link to="/">Home</Link></h2>
-      <h2><Link to="/recipes">Recipes</Link></h2>
-      {/* <h2><a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market Near You!</a></h2> */}
-
+        <h1>Is it in season?</h1>
+        <h2><Link to="/">Home</Link></h2>
+        <h2><Link to="/recipes">Recipes</Link></h2>
+        <h2><Link to="/seasons">Search by Season</Link></h2>
+        {/* <h2><a href="https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/?source=fe&directory=farmersmarket&location=&x=&y=">Find a Farmers Market</a></h2> */}
       </StyledHeader>
     </>
   )
