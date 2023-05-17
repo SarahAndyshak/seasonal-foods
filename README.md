@@ -106,3 +106,5 @@ All images were modified from photos posted to unsplash.com. You can find them h
 * [Grapes, Andrey Haimin](https://unsplash.com/photos/qtwlKiu6VHg)
 * [Dragon fruit, Helen Thomas](https://unsplash.com/photos/vkVLkKi8H60)
 * [Watermelon, Art Rachen](https://unsplash.com/photos/izi5AnlbRIA)
+* [Gourd, Cate Bligh](https://unsplash.com/photos/CNFnGLn-XzA)
+* [Frosted berries, Galina N](https://unsplash.com/photos/AgWVcQz1bOA)
