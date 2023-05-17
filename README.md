@@ -39,7 +39,11 @@ Hovering over an item for the link
 Details about each item
 ![Details page](details.png)
 The recipes page
-![Recipe links](recipes-page.png)
+![Recipe links](recipes.png)
+Selecting a group of items by season
+![Seasonal search page](search-by-season.png)
+Grouping of items based on their harvest season
+![Fall items listed](fall-details.png)
 
 ## Getting Started with Create React App
 
