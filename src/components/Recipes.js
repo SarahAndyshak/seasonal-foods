@@ -124,8 +124,8 @@ function Recipes () {
       <br />
 
       <div className="container">
-        <Link to="foods/7"><img src={Kiwi} alt="Kiwi" /></Link>
-        <h1><Link to="foods/7">Kiwi</Link></h1>
+        <Link to="/foods/7"><img src={Kiwi} alt="Kiwi" /></Link>
+        <h1><Link to="/foods/7">Kiwi</Link></h1>
         <h3><a href="https://cookeatshare.com/recipes/chocolate-kiwi-smoothie-700004">Chocolate Kiwi Smoothie, by Nupur UKrasoi</a></h3>
         <h3><a href="https://cookeatshare.com/recipes?keywords=kiwi">Check out more recipes with kiwi!</a></h3>
       </div>
