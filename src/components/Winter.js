@@ -73,14 +73,14 @@ function Winter() {
 
       <StyledWinter>
         
-        <h1>Fall foods</h1>
+        <h1>Winter foods</h1>
         <div className="container">
           {winterState.map((food, foodId) =>
-          <li key={foodId}>
+          <h3 key={foodId}>
             <Link to={`/foods/${food.foodId}`}>
             <h3>{food.name}</h3>
             </Link>
-          </li>
+          </h3>
           )}
         </div>
         <br />
