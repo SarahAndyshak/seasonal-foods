@@ -4,6 +4,8 @@
 
 A React application that helps users find out when fruits and vegetables are in season, where to find them, and where to find recipes using these ingredients. This application consumes the [SeasonalFood API](https://github.com/SarahAndyshak/SeasonalFood.Solution). Part of my capstone project.
 
+View this project live [here!](https://seasonal-foods-xi.vercel.app/)
+
 #### 🍊 [Technologies Used](#technologies-used)
 #### 🥦 [How to use this App](#how-to-use-this-app)
 #### 🍇 [App plan](#app-plan)
@@ -22,7 +24,9 @@ A React application that helps users find out when fruits and vegetables are in 
 * The [SeasonalFood API](https://github.com/SarahAndyshak/SeasonalFood.Solution)
 
 ## How to use this App
-### If you want to run this app locally on your machine:
+View this project live [here!](https://seasonal-foods-xi.vercel.app/)
+
+### OR If you want to run this app locally on your machine:
 1. Clone this repository to your local machine.
 2. Clone the [SeasonalFood API](https://github.com/SarahAndyshak/SeasonalFood.Solution) to your local machine and follow directions for installation in its README.
 3. If you are running this app using the API downloaded to your own machine, adjust the API calls in the following files: FoodDetail.js, FoodList.js, Spring.js, Summer.js, Fall.js, and Winter.js.
