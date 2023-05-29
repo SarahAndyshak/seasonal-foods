@@ -47,7 +47,7 @@ function Spring() {
   const[loadedState, setLoadedState] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/foods?harvestSeason=spring`)
+    fetch(`https://seasonalfoodapp.azurewebsites.net/api/foods?harvestSeason=spring`)
     .then(response => {
       if(!response.ok){
         throw new Error(`${response.status}: ${response.statusText}`);

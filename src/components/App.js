@@ -10,6 +10,7 @@ import Spring from './Spring';
 import Summer from './Summer';
 import Fall from './Fall';
 import Winter from './Winter';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path="/fall" element={<Fall />} />
       <Route path="/winter" element={<Winter />} />
     </Routes>
+    <Footer />
     </>
   );
 }

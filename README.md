@@ -22,11 +22,12 @@ A React application that helps users find out when fruits and vegetables are in 
 * The [SeasonalFood API](https://github.com/SarahAndyshak/SeasonalFood.Solution)
 
 ## How to use this App
-
+### If you want to run this app locally on your machine:
 1. Clone this repository to your local machine.
 2. Clone the [SeasonalFood API](https://github.com/SarahAndyshak/SeasonalFood.Solution) to your local machine and follow directions for installation in its README.
-3. Run `dotnet run` or `dotnet watch run` in your CLI or terminal.
-4. If the browser does not automatically open, navigate to _http://localhost:3000_ in your browser.
+3. If you are running this app using the API downloaded to your own machine, adjust the API calls in the following files: FoodDetail.js, FoodList.js, Spring.js, Summer.js, Fall.js, and Winter.js.
+4. Run `dotnet run` or `dotnet watch run` in your CLI or terminal.
+5. If the browser does not automatically open, navigate to _http://localhost:3000_ in your browser.
 
 ## App plan
 ![App plan](App-plan.png)

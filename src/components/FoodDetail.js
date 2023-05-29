@@ -34,7 +34,7 @@ function FoodDetail() {
   const[loadedState, setLoadedState] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/foods/${id}`)
+    fetch(`https://seasonalfoodapp.azurewebsites.net/api/foods/${id}`)
     .then(response => {
       if(!response.ok){
         throw new Error(`${response.status}: ${response.statusText}`);
