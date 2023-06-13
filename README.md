@@ -113,3 +113,4 @@ All images were modified from photos posted to unsplash.com. You can find them h
 * [Watermelon, Art Rachen](https://unsplash.com/photos/izi5AnlbRIA)
 * [Gourd, Cate Bligh](https://unsplash.com/photos/CNFnGLn-XzA)
 * [Frosted berries, Galina N](https://unsplash.com/photos/AgWVcQz1bOA)
+* [Watermelon favicon from Icons](href="https://icons8.com/icon/qsamHkjVPQf3/watermelon)
